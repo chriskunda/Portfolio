@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Viga&display=swap');
+
+
+.body1{
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.names{
+    background-color: grey;
+    line-height: 15px;
+}
+.names>h2{
+    font-family: "Viga", sans-serif;
+    font-weight: normal;
+}
+
+.foto{
+    background-color: skyblue;
+    width: 222.22px;
+}
