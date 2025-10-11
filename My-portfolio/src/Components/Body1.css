@@ -1,20 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Viga&display=swap');
+
 
 
 .body1{
-    background-color: yellow;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .names{
-    background-color: grey;
     line-height: 15px;
+    margin-top: 180px;
+    margin-right: 100px;
+    font-size: larger;
 }
 .names>h2{
     font-family: "Viga", sans-serif;
-    font-weight: normal;
+    font-size: 30px;
+}
+.head1{
+    font-size: 40px;
+}
+.head2{
+    font-size: 50px;
+}
+.names>button{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
 }
 
 .foto{

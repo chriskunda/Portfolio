@@ -1,0 +1,17 @@
+
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.words{
+    width: 40%;
+    background-color: yellow;
+}
+
+.about{
+    width: 60%;
+    background-color: grey;
+}
