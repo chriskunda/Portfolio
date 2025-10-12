@@ -4,35 +4,54 @@
 .body1{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    height: 578px;
 }
 
 .names{
-    line-height: 15px;
-    margin-top: 180px;
-    margin-right: 100px;
-    font-size: larger;
+    
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
 }
 .names>h2{
     font-family: "Viga", sans-serif;
     font-size: 30px;
+    line-height: 0;
 }
 .head1{
     font-size: 40px;
+    line-height: 0;
 }
 .head2{
     font-size: 50px;
+    line-height: 0;
 }
-.names>button{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 10px;
+
+.names>p{
     padding-bottom: 10px;
+    line-height: 0;
+}
+.but{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.butt{
+    width: 30%;
+    padding: 15px;
     border-radius: 20px;
-    border: 1px solid black;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+
 }
 
 .foto{
+    display: flex;
     background-color: skyblue;
     width: 222.22px;
 }

@@ -5,14 +5,18 @@ function Body() {
     return (
         <div className="body1">
             <div className="names">
+                <div className="nam">
                 <h2>Hey, I'm</h2>
                 <h1 className="head1">CHRISTIAN</h1>
                 <h1 className="head2">IRADUKUNDA</h1>
                 <p>christianira2003@gmail.com</p>
-                <button>My cv</button>
+                </div>
+                <div className="but">
+                <button className="butt">My cv</button>
+                </div>
             </div>
             <div className="foto">
-                
+                <p>aha bro</p>
             </div>
             
         </div>
