@@ -1,57 +1,56 @@
-
-
-
 .body1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    height: 581px;
     align-items: center;
-    height: 578px;
+    justify-content: space-evenly;
 }
 
 .names{
-    
-    background-color: green;
+    margin-top: 30px;
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
 }
-.names>h2{
-    font-family: "Viga", sans-serif;
-    font-size: 30px;
+.nam{
     line-height: 0;
+}
+.he{
+    font-weight: 500;
+    font-size: 50px;
 }
 .head1{
-    font-size: 40px;
-    line-height: 0;
+    padding-top: 10px;
+    font-size: 60px;
 }
 .head2{
-    font-size: 50px;
-    line-height: 0;
+    padding-top: 10px;
+    font-size: 60px;
 }
-
-.names>p{
-    padding-bottom: 10px;
-    line-height: 0;
+.nam>p{
+    font-size: 20px;
 }
 .but{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
 }
 .butt{
-    width: 30%;
-    padding: 15px;
     border-radius: 20px;
-    border-color: black;
+    padding: 8px;
+    width: 30%;
     display: flex;
     justify-content: center;
-
 }
 
 .foto{
+    width: 30%;
+    height: 60%;
+    border-radius: 50px;
+    border: 1px solid black;
     display: flex;
-    background-color: skyblue;
-    width: 222.22px;
+    justify-content: center;
+    align-items: center;
 }

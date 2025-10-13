@@ -1,21 +1,21 @@
 import "./Nav.css"
 function Nav() {
   return( 
-  <div className="nav">
+  
   <nav>
     <div className="chris">
-    <p>Chris</p>
+      <p>Chris</p>
     </div>    
     <div className="links">
-    <a href="">Home</a>
-    <a href="">Projects</a>
-    <a href="">Skills</a>
+      <a href="">Home</a>
+      <a href="">Projects</a>
+      <a href="">Skills</a>
     </div>
-    <div className="butt">
-    <button>Contact</button>
+    <div className="nav-button">
+      <button className="buto">Contact</button>
     </div>
   </nav>
-  </div>
+  
   )
 }
 

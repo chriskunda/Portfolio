@@ -1,42 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
 
 nav{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    font-family: "Viga", sans-serif;
-    border-bottom:1px solid black;
+    
+    border-bottom: 1px solid black;
 }
 
 .chris{
+    width: 33.3333333%;
     display: flex;
-    align-items: center;
+    justify-content: start;
     margin-left: 20px;
 }
 
 .links{
+    width: 33.3333333%;
+
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    gap: 70px;
 
 }
 .links>a{
     text-decoration: none;
-    
 }
 
-.butt{
+.nav-button{
+    width: 33.3333333%;
     display: flex;
+    flex-direction: row;
+    justify-content: end;
     align-items: center;
     margin-right: 20px;
 }
-.butt>button{
-    height: 30px;
-    width: 70px;
-}
 
-button{
-    border-radius: 4px;
-    border-style: none;
+.buto{
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    
 }

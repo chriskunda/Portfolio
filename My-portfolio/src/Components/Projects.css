@@ -1,0 +1,45 @@
+
+
+.proj{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+}
+
+.proj>h2{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.div-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 582.67px;
+    
+}
+.div-container>div{
+    background-color: #516395;
+    
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+
+.first{
+    width: 60%;
+}
+.second{
+    width: 30%;
+}
+.third{
+    width: 30%;
+}
+.fourth{
+    width: 60%;
+}
