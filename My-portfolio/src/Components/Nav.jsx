@@ -3,17 +3,18 @@ function Nav() {
   return( 
   
   <nav>
-    <div className="chris">
+    {/* <div className="chris">
       <p>Chris</p>
-    </div>    
+    </div>     */}
     <div className="links">
       <a href="">Home</a>
       <a href="">Projects</a>
       <a href="">Skills</a>
+      <a href="">Contact</a>
     </div>
-    <div className="nav-button">
+    {/* <div className="nav-button">
       <button className="buto">Contact</button>
-    </div>
+    </div> */}
   </nav>
   
   )
