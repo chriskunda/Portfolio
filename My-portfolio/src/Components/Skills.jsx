@@ -5,7 +5,7 @@ function Skills() {
         <div className="skills">
             <h2>Tools that create my Projects</h2>
             <div className="tools">
-                <div><p>erty</p></div>
+                <div className="moja"><p>erty</p></div>
                 <div><p>erty</p></div>
                 <div><p>erty</p></div>
                 <div><p>erty</p></div>
