@@ -3,8 +3,9 @@
 .proj{
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 900px;
     width: 100%;
+    background-color: rgb(242, 242, 242);
 }
 
 .proj>h2{

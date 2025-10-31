@@ -1,9 +1,12 @@
 .body1{
     display: flex;
     flex-direction: row;
-    height: 581px;
+    height: 600px;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(242, 242, 242);
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 .names{

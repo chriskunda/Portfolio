@@ -2,6 +2,7 @@ import "./About.css"
 
 function About() {
     return (
+        <div className="parent-about">
         <div className="about-container">
             <div className="words">
                 <h1>Here is more about Me,</h1>
@@ -14,6 +15,7 @@ function About() {
                 improving my code every day. My goal is to grow into a professional front-end developer <br />
                 who can build modern and impactful web projects.</p>
             </div>
+        </div>
         </div>
     )
 }

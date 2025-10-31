@@ -7,10 +7,17 @@ function Contact1() {
                 <h1>Get in Touch</h1>
                 <p>Let's convert your ideas into successful projects</p>
             </div>
+            
             <div className="down-part">
             <div className="talk">
-                <h1>Contact Me</h1>
-                <p>You will be one step closer to build your perfect project</p>
+                <div className="contact-words">
+                    <h1>Contact Me</h1>
+                    <p>You will be one step</p>
+                    <p>closer to build your perfect project</p>
+                </div>
+                <div className="contact-icons">
+                    <p>icons</p>
+                </div>
             </div>
             <div className="info">
                 <form action="">
@@ -21,6 +28,7 @@ function Contact1() {
                 </form>
             </div>
             </div>
+            
         </div>
     )
 }
