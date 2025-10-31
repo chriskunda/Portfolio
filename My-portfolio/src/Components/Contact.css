@@ -1,0 +1,82 @@
+
+
+.hamagara{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 0;
+    background-color: skyblue;
+}
+.down-part{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.talk{
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+    width: 30%;
+    line-height: 0;
+}
+.talk>h1{
+    font-size: 45px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: grey;
+    width: 30%;
+    height: 250px;
+    
+}
+
+.info>form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input{
+    outline: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border-style: none;
+    border: solid 1px grey(255, 0, 0, 0);
+}
+
+
+textarea{
+    outline: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 80.5%;
+    height: 65px;
+    border-radius: 10px;
+
+}
+
+.info>form>button{
+    margin-left: 10px;
+    width: 35%;
+    border-radius: 10px;
+    border-style: none;
+    padding: 8px;
+}
