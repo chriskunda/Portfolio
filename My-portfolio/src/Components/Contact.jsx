@@ -14,10 +14,16 @@ function Contact1() {
                     <h1>Contact Me</h1>
                     <p>You will be one step</p>
                     <p>closer to build your perfect project</p>
+
+                    <div className="contact-icons">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+
                 </div>
-                <div className="contact-icons">
-                    <p>icons</p>
-                </div>
+
             </div>
             <div className="info">
                 <form action="">
@@ -28,7 +34,7 @@ function Contact1() {
                 </form>
             </div>
             </div>
-            
+            <p>Copyright © 2025. All Rights Reserved</p>
         </div>
     )
 }
