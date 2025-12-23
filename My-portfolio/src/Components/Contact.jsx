@@ -16,10 +16,11 @@ function Contact1() {
                     <p>closer to build your perfect project</p>
 
                     <div className="contact-icons">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <a className="icon1" href=""></a>
+                        <a className="icon2" href=""></a>
+                        <a className="icon3" href=""></a>
+                        <a className="icon4" href=""></a>
+ 
                     </div>
 
                 </div>

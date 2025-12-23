@@ -68,12 +68,12 @@
     gap: 40px;
 }
 
-.contact-icons>div{
-    background-color: yellow;
+.contact-icons>a{
     margin-top: 5px;
     border: 1px solid black;
     border-radius: 100%;
     padding: 20px;
+    font-size: 10px;
 }
 
 .info{
