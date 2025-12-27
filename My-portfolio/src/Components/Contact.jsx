@@ -1,8 +1,8 @@
 import "./Contact.css"
 
-function Contact1() {
+const Contact1 = () => {
     return(
-        <div className="hamagara">
+        <div className="contact-form">
             <div className="title">
                 <h1>Get in Touch</h1>
                 <p>Let's convert your ideas into successful projects</p>
@@ -28,8 +28,8 @@ function Contact1() {
             </div>
             <div className="info">
                 <form action="">
-                    <input type="Names" placeholder="Full Name" />
-                    <input type="Email" placeholder="Email" />
+                    <input type="text" placeholder="Full Name" />
+                    <input type="email" placeholder="Email" />
                     <textarea name="" id="" placeholder="Your request"></textarea>
                     <button>Submit</button>
                 </form>
