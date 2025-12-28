@@ -3,7 +3,7 @@
     flex-direction: row;
     height: 600px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgb(242, 242, 242);
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -16,8 +16,9 @@
     flex-direction: column;
     border-radius: 20px;
     margin-bottom: 50px;
-    margin-left: 33px;
+    margin-right: 70px;
 }
+
 .nam{
     line-height: 0;
 }
@@ -58,4 +59,10 @@
     justify-content: center;
     align-items: center;
     margin-right: 15px;
+}
+
+.port-pic{
+    height: auto;
+    width: 85%;
+    margin-top: 30px;
 }

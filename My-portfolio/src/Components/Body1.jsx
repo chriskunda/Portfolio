@@ -1,4 +1,5 @@
 import "./Body1.css"
+import PortPhoto from '../assets/Chris.png'
 
 
 function Body() {
@@ -16,7 +17,7 @@ function Body() {
                 </div>
             </div>
             <div className="foto">
-                <p>Agafoto</p>
+             <img className="port-pic" src= {PortPhoto} alt="Chris photo" />
             </div>
             
         </div>

@@ -1,6 +1,6 @@
 import "./Contact.css"
 
-const Contact1 = () => {
+const Contact = () => {
     return(
         <div className="contact-form">
             <div className="title">
@@ -35,9 +35,8 @@ const Contact1 = () => {
                 </form>
             </div>
             </div>
-            <p>Copyright © 2025. All Rights Reserved</p>
         </div>
     )
 }
 
-export default Contact1;
+export default Contact;
