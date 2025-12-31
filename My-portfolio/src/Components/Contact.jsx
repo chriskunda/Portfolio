@@ -1,6 +1,30 @@
+import { useState, useEffect } from "react";
+
 import "./Contact.css"
 
 const Contact = () => {
+
+    const [name, setName] = useState ("");
+    const [email, setEmail] = useState ("");
+    const [message, setMessage] = useState ("");
+
+    const submitinfo = (s) => {
+        s.preventDefault();
+
+       return( 
+            (!name || !email || !message)? 
+            alert("Please fill all fields") : 
+            
+            console.log({name, email, message}),
+            setName(""),
+            setEmail(""),
+            setMessage("")
+
+            );
+            
+        
+    }
+
     return(
         <div className="contact-form">
             <div className="title">
@@ -28,9 +52,9 @@ const Contact = () => {
             </div>
             <div className="info">
                 <form action="">
-                    <input type="text" placeholder="Full Name" />
-                    <input type="email" placeholder="Email" />
-                    <textarea name="" id="" placeholder="Your request"></textarea>
+                    <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+                    <textarea name="" id="" placeholder="Your request" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                     <button>Submit</button>
                 </form>
             </div>
