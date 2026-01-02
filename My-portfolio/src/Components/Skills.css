@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .parent-skills{
     background-color: rgb(242, 242, 242);
 }
