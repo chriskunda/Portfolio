@@ -1,13 +1,14 @@
 
 .parent-about{
     background-color: rgb(242, 242, 242);
+    height: auto;
 }
 .about-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 450px;
+    height: 500px;
     background-color: white;
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
@@ -25,7 +26,7 @@
     align-items: center;
     justify-content: center;
     line-height: 25px;
-    width: 60%;
+    width: 52%;
     height: 200px;
     border: 1px solid black;
     border-radius: 0px 20px 0px 20px;

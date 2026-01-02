@@ -8,10 +8,10 @@ function Nav() {
       <p>Chris</p>
     </div>     */}
     <div className="links">
-      <a href="">Home</a>
-      <a href="">Projects</a>
-      <a href="">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="#about-section">About</a>
+      <a href="#project-section">Projects</a>
+      <a href="#skills-section">Skills</a>
+      <a href="#contact-section">Contact</a>
     </div>
     {/* <div className="nav-button">
       <button className="buto">Contact</button>

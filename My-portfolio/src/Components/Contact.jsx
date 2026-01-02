@@ -26,7 +26,7 @@ const Contact = () => {
     }
 
     return(
-        <div className="contact-form" id="contact">
+        <div className="contact-form" id="contact-section">
             <div className="title">
                 <h1>Get in Touch</h1>
                 <p>Let's convert your ideas into successful projects</p>

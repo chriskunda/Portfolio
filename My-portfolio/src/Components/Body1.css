@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.body1{
+.body-section{
     display: flex;
     flex-direction: row;
     height: 650px;
@@ -21,7 +21,9 @@ html {
     border-radius: 20px;
     margin-bottom: 50px;
     margin-right: 70px;
+    
 }
+
 
 .nam{
     line-height: 0;
@@ -39,7 +41,7 @@ html {
     font-size: 60px;
 }
 .nam>p{
-    font-size: 20px;
+    font-size: 16px;
 }
 .but{
     display: flex;
@@ -67,6 +69,6 @@ html {
 
 .port-pic{
     height: auto;
-    width: 85%;
-    margin-top: 30px;
+    width: 88%;
+    margin-top: 60px;
 }
