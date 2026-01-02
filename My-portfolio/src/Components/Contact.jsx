@@ -26,7 +26,7 @@ const Contact = () => {
     }
 
     return(
-        <div className="contact-form">
+        <div className="contact-form" id="contact">
             <div className="title">
                 <h1>Get in Touch</h1>
                 <p>Let's convert your ideas into successful projects</p>
@@ -51,7 +51,7 @@ const Contact = () => {
 
             </div>
             <div className="info">
-                <form action="">
+                <form action="" onSubmit={submitinfo}>
                     <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
                     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <textarea name="" id="" placeholder="Your request" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
