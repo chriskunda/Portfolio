@@ -6,6 +6,7 @@ html{
     display: flex;
     flex-direction: row;
     height: 650px;
+    top: 0;
     align-items: center;
     justify-content: space-evenly;
     background-color: rgb(242, 242, 242);
@@ -27,7 +28,7 @@ html{
 
 
 .nam{
-    line-height: 0;
+    line-height: 5px;
 }
 .he{
     font-weight: 500;
@@ -60,8 +61,6 @@ html{
 .foto{
     width: 30%;
     height: 60%;
-    border-radius: 50px;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,4 +71,34 @@ html{
     height: auto;
     width: 88%;
     margin-top: 60px;
+}
+
+@media (max-width: 500px) {
+    .body-section{
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .foto{
+        display: none;
+    }
+    .names{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+    .nam>p{
+        font-size: 15px;
+    }
+    .but{
+        width: 100%;
+    }
+    .butt{
+        width: 193.6px;
+        padding: 12px;
+        font-size: 10px;
+    }
 }

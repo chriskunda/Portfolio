@@ -6,7 +6,9 @@ function Skills() {
         <div className="skills">
             <h2>Tools that create my Projects</h2>
             <div className="tools">
-                <div className="moja"><p>erty</p></div>
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                </div>
                 <div><p>erty</p></div>
                 <div><p>erty</p></div>
                 <div><p>erty</p></div>

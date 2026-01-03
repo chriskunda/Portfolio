@@ -5,23 +5,31 @@ import "./Contact.css"
 const Contact = () => {
 
     const [name, setName] = useState ("");
+
+
     const [email, setEmail] = useState ("");
     const [message, setMessage] = useState ("");
+
+
+    const handleNameChange = (e) => {
+        setName(e.target.value)
+    };
+
 
     const submitinfo = (s) => {
         s.preventDefault();
 
-       return( 
-            (!name || !email || !message)? 
-            alert("Please fill all fields") : 
-            
-            console.log({name, email, message}),
-            setName(""),
-            setEmail(""),
-            setMessage("")
 
-            );
+        if (!name || !email || !message) {
+            alert("Please fill all fields")
+        } else {
             
+            console.log(name, email, message)
+
+            setName("")
+            setEmail("")
+            setMessage("")
+        }
         
     }
 
@@ -40,10 +48,18 @@ const Contact = () => {
                     <p>closer to build your perfect project</p>
 
                     <div className="contact-icons">
-                        <a className="icon1" href=""></a>
-                        <a className="icon2" href=""></a>
-                        <a className="icon3" href=""></a>
-                        <a className="icon4" href=""></a>
+                        <a className="icon1" href="">
+                            <i className="fa-brands fa-instagram ig-icon"></i>
+                        </a>
+                        <a className="icon2" href="">
+                            <i className="fa-brands fa-github git-icon"></i>
+                        </a>
+                        <a className="icon3" href="">
+                            <i className="fa-regular fa-envelope email-icon"></i>
+                        </a>
+                        <a className="icon4" href="">
+                            <i className="fa-brands fa-whatsapp whats-icon"></i>
+                        </a>
  
                     </div>
 
@@ -52,7 +68,13 @@ const Contact = () => {
             </div>
             <div className="info">
                 <form action="" onSubmit={submitinfo}>
-                    <input type="text" placeholder="Full Name" value={name} onChange={(e) => setName(e.target.value)}/>
+                    <input 
+                        type="text" 
+                        placeholder="Full Name" 
+                        value={name} 
+                        onChange={(e) => handleNameChange(e)}
+                    />
+
                     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <textarea name="" id="" placeholder="Your request" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                     <button>Submit</button>

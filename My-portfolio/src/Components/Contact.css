@@ -71,8 +71,8 @@ html{
     margin-top: 5px;
     border: 1px solid black;
     border-radius: 100%;
-    padding: 20px;
-    font-size: 10px;
+    padding: 4px;
+    font-size: 23px;
 }
 
 .info{
@@ -126,4 +126,21 @@ button{
 
 button:hover{
     background-color: rgb(170, 172, 177);
+}
+
+
+.ig-icon {
+    color: black;
+}
+
+.git-icon{
+    color: black;
+}
+
+.email-icon{
+    color: black;
+}
+
+.whats-icon{
+    color: black;
 }
