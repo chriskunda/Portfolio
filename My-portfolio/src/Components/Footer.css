@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(242, 242, 242);
+    border-top: 1px solid black;
+    height: 33px;
 }
 
 .foot-p{

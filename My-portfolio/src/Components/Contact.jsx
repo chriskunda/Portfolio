@@ -68,6 +68,7 @@ const Contact = () => {
             </div>
             <div className="info">
                 <form action="" onSubmit={submitinfo}>
+                    
                     <input 
                         type="text" 
                         placeholder="Full Name" 
@@ -75,9 +76,20 @@ const Contact = () => {
                         onChange={(e) => handleNameChange(e)}
                     />
 
-                    <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-                    <textarea name="" id="" placeholder="Your request" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                    <input type="email" 
+                    placeholder="Email" 
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)}/>
+
+                    <textarea name="" 
+                    id="" 
+                    placeholder="Your request" 
+                    value={message} 
+                    onChange={(e) => setMessage(e.target.value)}>
+                    </textarea>
+
                     <button>Submit</button>
+
                 </form>
             </div>
             </div>

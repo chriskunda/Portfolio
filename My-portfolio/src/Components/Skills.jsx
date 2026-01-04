@@ -8,11 +8,21 @@ function Skills() {
             <div className="tools">
                 <div>
                     <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
                 </div>
-                <div><p>erty</p></div>
-                <div><p>erty</p></div>
-                <div><p>erty</p></div>
-                <div><p>erty</p></div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h2>CSS</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>REACT</h2>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>FIGMA</h2>
+                </div>
+                
             </div>
         </div>
         </div>
