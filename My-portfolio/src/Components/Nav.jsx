@@ -11,7 +11,7 @@ function Nav() {
      <i className="fa-solid fa-bars"></i>
     </div>    
     <div className="links">
-      <a href="#about-section">About</a>
+      <a href="#body">Home</a>
       <a href="#project-section">Projects</a>
       <a href="#skills-section">Skills</a>
       <a href="#contact-section">Contact</a>

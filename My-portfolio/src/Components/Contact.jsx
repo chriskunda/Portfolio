@@ -51,7 +51,7 @@ const Contact = () => {
                         <a className="icon1" href="">
                             <i className="fa-brands fa-instagram ig-icon"></i>
                         </a>
-                        <a className="icon2" href="">
+                        <a className="icon2" href="https://github.com/chriskunda">
                             <i className="fa-brands fa-github git-icon"></i>
                         </a>
                         <a className="icon3" href="">
@@ -76,19 +76,22 @@ const Contact = () => {
                         onChange={(e) => handleNameChange(e)}
                     />
 
-                    <input type="email" 
-                    placeholder="Email" 
-                    value={email} 
-                    onChange={(e) => setEmail(e.target.value)}/>
+                    <input
+                        type="email" 
+                        placeholder="Email" 
+                        value={email} 
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
 
-                    <textarea name="" 
+                    <textarea 
+                    name="" 
                     id="" 
                     placeholder="Your request" 
                     value={message} 
                     onChange={(e) => setMessage(e.target.value)}>
                     </textarea>
 
-                    <button>Submit</button>
+                    <button className="submit-button">Submit</button>
 
                 </form>
             </div>

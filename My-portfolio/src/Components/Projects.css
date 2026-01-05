@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
@@ -15,6 +17,7 @@ html{
     display: flex;
     justify-content: center;
     font-size: 45px;
+    font-family: "Stack Sans Notch", sans-serif;
 }
 
 .div-container{
@@ -28,16 +31,46 @@ html{
 }
 .div-container>div{
     background-color: #516395;
-    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 250px;
     border-radius: 10px;
     border: 1px solid black;
     margin-top: 40px;
 }
 
+.div-container>div:hover{
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid grey;
+}
+
 .first{
     width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+.first1-div{
+    width: 620px;
+}
+.firstphoto{
+    width: 610px;
+    height: 250px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.first2-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    background-color: green;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
 .second{
     width: 30%;
 }

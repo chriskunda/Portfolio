@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -43,7 +47,9 @@ html{
     font-size: 60px;
 }
 .nam>p{
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Annie Use Your Telescope", cursive;
 }
 .but{
     display: flex;
@@ -56,6 +62,13 @@ html{
     width: 30%;
     display: flex;
     justify-content: center;
+    border: 1px solid gray;
+    color: black;
+    background-color: rgb(226, 227, 227);
+}
+
+.butt:hover{
+    background-color: rgb(215, 218, 219);
 }
 
 .foto{
@@ -69,7 +82,7 @@ html{
 
 .port-pic{
     height: auto;
-    width: 88%;
+    width: 87.4%;
     margin-top: 60px;
 }
 

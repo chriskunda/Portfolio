@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marmelad&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
 * {
     font-family: sans-serif;
 }
@@ -6,3 +10,14 @@ body {
     margin: 0;
 }
 
+p,a{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+h2{
+    font-family: "Marmelad", sans-serif;
+}
+
+h1{
+    font-family: "Stack Sans Notch", sans-serif;
+}
