@@ -9,17 +9,20 @@ function Projects() {
 
                 <div className="first">
 
-                    <div className="fisrt1-div"><img className="firstphoto" src={Firstphoto} alt="" /></div>
+                    <div className="fisrt1-div">
+                        <img className="firstphoto" src={Firstphoto} alt="" />
+                    </div>
 
                     <div className="first2-div">
-                        <div className="cardlink1">
-                            <i className="fa-solid fa-link"></i>
-                        </div>
                         <div className="tembera-words">
-                            <h1>TEMBERA</h1>
-                            <p>Discover unforgettable destinations, rich cultures, and unique 
+                            <div className="cardlink1">
+                            <h2>Tembera</h2>
+                            <i className="fa-solid fa-link"></i>
+                            </div>
+                            <p className="first-p">Discover unforgettable destinations, rich cultures, and unique 
                             experiences from around the world. Our tourism website helps travelers 
                             explore top attractions, plan trips easily, and create lasting memories.</p>
+
                         </div>
                     </div>
                 </div>

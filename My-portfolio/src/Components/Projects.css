@@ -47,14 +47,15 @@ html{
     width: 60%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    overflow: hidden;
+    /* justify-content: safe; */
 }
 
 .first1-div{
-    width: 620px;
+    width: 40%;
 }
 .firstphoto{
-    width: 610px;
+    width: 70%;
     height: 250px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -62,14 +63,32 @@ html{
 .first2-div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 270px;
+    width: 40%;
+    height: 250px;
     background-color: green;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.cardlink1{
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+.cardlink1>h2{
+    margin-left: 10px;
+}
+.cardlink1>i{
+    margin-right: 10px;
+}
 
+.first-p{
+    margin-left: 10px;
+    margin-right: 3px;
+}
 
 .second{
     width: 30%;
