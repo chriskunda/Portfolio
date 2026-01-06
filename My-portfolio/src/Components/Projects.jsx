@@ -28,8 +28,17 @@ function Projects() {
                 </div>
 
                 <div className="second">
-                    <div className="second1-div"></div>
-                    <div className="second2-div"></div>
+                    <div className="second1-div">
+
+                        <img src={Firstphoto} alt="" />
+
+                    </div>
+                    <div className="second2-div">
+                        <h2>Tembera</h2>
+                        <p>Discover unforgettable destinations, rich cultures, and unique 
+                            experiences from around the world.</p>
+                        <i className="fa-solid fa-link"></i>
+                    </div>
                 </div>
                 <div className="third">
                     <div className="third1-div"></div>
