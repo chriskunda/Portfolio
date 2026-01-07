@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
 }
 
+a:hover{
+    background-color: rgb(215, 218, 219);
+    cursor: pointer;
+}
+
 .contact-form{
     display: flex;
     flex-direction: column;
@@ -81,13 +86,14 @@ html{
     border: 1px solid black;
     border-radius: 20px;
     width: 30%;
-    height: 250px;
+    height: 300px;
+    padding: 10px;
 }
 
 .info>form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 input{
@@ -103,10 +109,11 @@ input{
 
 textarea{
     outline: none;
+    padding-top: 10px;
     padding-left: 10px;
     margin-left: 10px;
     width: 80.5%;
-    height: 65px;
+    height: 90px;
     border-radius: 10px;
     border: 1px solid grey;
 }
@@ -122,7 +129,6 @@ textarea{
 
 .submit-button:hover{
     background-color: rgb(215, 218, 219);
-    color: grey;
 }
 
 

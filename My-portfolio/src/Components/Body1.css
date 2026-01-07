@@ -26,12 +26,11 @@ html{
     flex-direction: column;
     border-radius: 20px;
     margin-bottom: 50px;
-    margin-right: 70px;
-    
+    margin-right: 70px;   
 }
 
 
-.nam{
+.names-introduction{
     line-height: 5px;
 }
 .he{
@@ -46,7 +45,7 @@ html{
     padding-top: 10px;
     font-size: 60px;
 }
-.nam>p{
+.names-introduction>p{
     font-size: 17px;
     font-weight: bold;
     font-family: "Annie Use Your Telescope", cursive;
@@ -103,7 +102,7 @@ html{
         align-items: center;
         margin-right: 0;
     }
-    .nam>p{
+    .names-introduction>p{
         font-size: 15px;
     }
     .but{

@@ -4,26 +4,33 @@ import Firstphoto from "../assets/Hiking.jpg"
 function Projects() {
     return(
         <div className="proj" id="project-section">
+
             <h2>My Work.</h2>
+
+            <div className="Ps">
+            <p>A showcase of projects that reflect my skills in front-end development, clean design,</p>
+            <p className="p2">and building practical, user-focused web experiences.</p>
+            </div>
+
             <div className="div-container">
 
-                <div className="first">
+                <div className="second">
 
-                    <div className="fisrt1-div">
-                        <img className="firstphoto" src={Firstphoto} alt="" />
+                    <div className="second1-div">
+
+                        <img src={Firstphoto} alt="" />
+
                     </div>
-
-                    <div className="first2-div">
-                        <div className="tembera-words">
-                            <div className="cardlink1">
-                            <h2>Tembera</h2>
-                            <i className="fa-solid fa-link"></i>
-                            </div>
-                            <p className="first-p">Discover unforgettable destinations, rich cultures, and unique 
-                            experiences from around the world. Our tourism website helps travelers 
-                            explore top attractions, plan trips easily, and create lasting memories.</p>
-
+                    <div className="second2-div">
+                        <div className="h2-i">
+                        <h2>Project name</h2>
+                        <i className="fa-solid fa-link"></i>
                         </div>
+                        <div>
+                        <p>Projects built to showcase clean design, functionality, 
+                            and practical web development experience.</p>
+                        </div>
+                        
                     </div>
                 </div>
 
@@ -34,19 +41,88 @@ function Projects() {
 
                     </div>
                     <div className="second2-div">
-                        <h2>Tembera</h2>
-                        <p>Discover unforgettable destinations, rich cultures, and unique 
-                            experiences from around the world.</p>
+                        <div className="h2-i">
+                        <h2>Project name</h2>
                         <i className="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                        <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
+                        </div>
+                        
                     </div>
                 </div>
-                <div className="third">
-                    <div className="third1-div"></div>
-                    <div className="third2-div"></div>
+
+                <div className="second">
+                    <div className="second1-div">
+
+                        <img src={Firstphoto} alt="" />
+
+                    </div>
+                    <div className="second2-div">
+                        <div className="h2-i">
+                        <h2>Project name</h2>
+                        <i className="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                        <p>Projects built to showcase clean design, functionality, and practical web development experience..</p>
+                        </div>
+                        
+                    </div>
                 </div>
-                <div className="fourth">
-                    <div></div>
-                    <div></div>
+
+                <div className="second">
+                    <div className="second1-div">
+
+                        <img src={Firstphoto} alt="" />
+
+                    </div>
+                    <div className="second2-div">
+                        <div className="h2-i">
+                        <h2>Project name</h2>
+                        <i className="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                        <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className="second">
+                    <div className="second1-div">
+
+                        <img src={Firstphoto} alt="" />
+
+                    </div>
+                    <div className="second2-div">
+                        <div className="h2-i">
+                        <h2>Project name</h2>
+                        <i className="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                        <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div className="second">
+                    <div className="second1-div">
+
+                        <img src={Firstphoto} alt="" />
+
+                    </div>
+                    <div className="second2-div">
+                        <div className="h2-i">
+                        <h2>Project name</h2>
+                        <i className="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                        <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
+                        </div>
+                        
+                    </div>
+
                 </div>
             </div>
         </div>

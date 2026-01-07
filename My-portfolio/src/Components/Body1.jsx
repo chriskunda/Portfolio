@@ -7,7 +7,7 @@ function Body() {
         
         <div className="body-section" id="body">
             <div className="names">
-                <div className="nam">
+                <div className="names-introduction">
                     <h2 className="he">Hey, I'm</h2>
                     <h1 className="head1">CHRiSTiAN</h1>
                     <h1 className="head2">iRADUKUNDA</h1>
