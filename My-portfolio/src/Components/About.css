@@ -25,6 +25,10 @@ html{
     
 }
 
+.h1-2{
+    display: none;
+}
+
 .about{
     display: flex;
     align-items: center;
@@ -36,4 +40,36 @@ html{
     border-radius: 0px 20px 0px 20px;
     font-size: 18px;
     padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .words{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .h1-1{
+        display: none;
+    }
+
+    .h1-2{
+        display: flex;
+        font-size: 50px;
+    }
+
+    .about{
+        width: 86%;
+        font-size: 15px;
+        padding: 10px;
+        line-height: 16px;
+    }
 }

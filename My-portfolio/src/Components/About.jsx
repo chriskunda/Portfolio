@@ -5,7 +5,8 @@ function About() {
         <div className="parent-about" id="about-section">
             <div className="about-container">
                 <div className="words">
-                    <h1>Here is more <br /> About Me,</h1>
+                    <h1 className="h1-1">Here is more <br /> About Me,</h1>
+                    <h1 className="h1-2">About Me</h1>
                 </div>
                 <div className="about">
                     <p>Hi! I’m Chris, a passionate and creative front-end developer who loves turning ideas into
