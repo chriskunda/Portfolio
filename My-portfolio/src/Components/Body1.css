@@ -92,6 +92,7 @@ html{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        height: 350px;
     }
     .foto{
         display: none;
@@ -102,8 +103,15 @@ html{
         align-items: center;
         margin-right: 0;
     }
+    .he{
+        font-size: 40px;
+    }
+    .head1,.head2{
+        font-size: 50px;
+    }
+
     .names-introduction>p{
-        font-size: 15px;
+        font-size: 13px;
     }
     .but{
         width: 100%;

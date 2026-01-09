@@ -38,13 +38,24 @@ a:hover{
 @media (max-width: 500px){
     nav{
         height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .chris{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
     }
 
     .links{
         display: none;
+    }
+
+    .burger-icon{
+        font-size: 25px;
+        margin-left: 15px;
     }
 }

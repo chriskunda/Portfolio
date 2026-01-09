@@ -8,7 +8,7 @@ function Nav() {
 
   <nav>
     <div className="chris">
-     <i className="fa-solid fa-bars"></i>
+     <i className="fa-solid fa-bars burger-icon"></i>
     </div>    
     <div className="links">
       <a href="#body">Home</a>
