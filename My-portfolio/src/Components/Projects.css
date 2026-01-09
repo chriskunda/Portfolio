@@ -88,3 +88,27 @@ html{
     font-family: "PT Sans", sans-serif;
     font-weight:500;
 }
+
+@media (max-width: 500px) {
+    .proj{
+        height: 15%;
+    }
+
+    .Ps>p{
+        font-size: 10px;
+    }
+
+    .div-container{
+        width: 100%;
+    }
+
+    .second{
+        width: 345px;
+        height: 332px;
+    }
+
+    .second1-div>img{
+        width: 345px;
+        height: 200px;
+    }
+}
