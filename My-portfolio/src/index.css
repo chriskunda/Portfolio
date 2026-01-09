@@ -6,8 +6,11 @@
     font-family: sans-serif;
 }
 
+
 body {
     margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 p,a{
@@ -21,4 +24,10 @@ h2{
 
 h1{
     font-family: "Stack Sans Notch", sans-serif;
+}
+
+@media (max-width: 500px) {
+    * {
+        /* overflow-x: hidden; */
+    }
 }

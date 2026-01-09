@@ -11,7 +11,7 @@ html{
     flex-direction: row;
     height: 650px;
     top: 0;
-    align-items: center;
+    align-items: end;
     justify-content: space-evenly;
     background-color: rgb(242, 242, 242);
     /* background: linear-gradient(to bottom right, #6fc3f700, #c2fdffb3); */
@@ -20,19 +20,24 @@ html{
 }
 
 .names{
-    margin-top: 30px;
     width: 40%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border-radius: 20px;
-    margin-bottom: 50px;
-    margin-right: 70px;   
+    margin-right: 70px;
 }
 
 
-.names-introduction{
-    line-height: 5px;
+
+.he, .head1, .head2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    line-height: 1;
 }
+
 .he{
     font-weight: 500;
     font-size: 50px;
@@ -71,8 +76,9 @@ html{
 }
 
 .foto{
-    width: 30%;
-    height: 60%;
+    width: auto;
+    height: auto;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +87,7 @@ html{
 
 .port-pic{
     height: auto;
-    width: 87.4%;
+    width: 350px;
     margin-top: 60px;
 }
 

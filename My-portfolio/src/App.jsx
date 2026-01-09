@@ -6,9 +6,11 @@ import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
+import "./App.css"
+
 function App() {
   return (
-    <div>
+    <div className="parent-container">
       <Nav />
       <Body1 />
       <About />
