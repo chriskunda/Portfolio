@@ -43,9 +43,12 @@ const Contact = () => {
             <div className="down-part">
             <div className="talk">
                 <div className="contact-words">
-                    <h1>Contact Me</h1>
-                    <p>You will be one step</p>
-                    <p>closer to build your perfect project</p>
+
+                    <div className="contact-intro">
+                        <h1 className="h1-contact">Contact Me</h1>
+                        <p className="p-contact">You will be one step</p>
+                        <p className="p-contact">closer to build your perfect project</p>
+                    </div>
 
                     <div className="contact-icons">
                         <a className="icon1" href="">
@@ -54,7 +57,7 @@ const Contact = () => {
                         <a className="icon2" href="https://github.com/chriskunda">
                             <i className="fa-brands fa-github git-icon"></i>
                         </a>
-                        <a className="icon3" href="">
+                        <a className="icon3" href="mailto:christianira2003@gmail.com">
                             <i className="fa-regular fa-envelope email-icon"></i>
                         </a>
                         <a className="icon4" href="">
@@ -66,6 +69,7 @@ const Contact = () => {
                 </div>
 
             </div>
+            
             <div className="info">
                 <form action="" onSubmit={submitinfo}>
                     

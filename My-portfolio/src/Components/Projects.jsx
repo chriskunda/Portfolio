@@ -5,11 +5,10 @@ function Projects() {
     return(
         <div className="proj" id="project-section">
 
-            <h2>My Work.</h2>
+            <h1>My Work.</h1>
 
             <div className="Ps">
-            <p>A showcase of projects that reflect my skills in front-end development, clean design,</p>
-            <p className="p2">and building practical, user-focused web experiences.</p>
+            <p>A showcase of projects that reflect my skills in front-end development, clean design, and building practical, user-focused web experiences.</p>
             </div>
 
             <div className="div-container">

@@ -40,28 +40,46 @@ a:hover{
 
 .title>h1{
     font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .title>p{
-    font-size: 23px;
+    font-size: 17px;
+    margin-top: 15px;
 }
 
 
 .talk{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 40%;
-    height: 300px;
+    height: auto;
     line-height: 0;
 }
 
 .contact-words{
     height: auto;
+    display: flex;
+    flex-direction: column;
 }
-.contact-words>h1{
+.contact-intro{
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    
+    
+    background-color: red;
+}
+
+.h1-contact{
     font-size: 70px;
 }
-.contact-words>p{
+.p-contact{
     font-size: 20px;
 
 }
