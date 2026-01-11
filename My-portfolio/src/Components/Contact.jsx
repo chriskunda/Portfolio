@@ -41,64 +41,64 @@ const Contact = () => {
             </div>
             
             <div className="down-part">
-            <div className="talk">
-                <div className="contact-words">
+                <div className="talk">
+                    <div className="contact-words">
 
-                    <div className="contact-intro">
-                        <h1 className="h1-contact">Contact Me</h1>
-                        <p className="p-contact">You will be one step</p>
-                        <p className="p-contact">closer to build your perfect project</p>
-                    </div>
+                        <div className="contact-intro">
+                            <h1 className="h1-contact">Contact Me</h1>
+                            <p className="p-contact">You will be one step</p>
+                            <p className="p-contact">closer to build your perfect project</p>
+                        </div>
 
-                    <div className="contact-icons">
-                        <a className="icon1" href="">
-                            <i className="fa-brands fa-instagram ig-icon"></i>
-                        </a>
-                        <a className="icon2" href="https://github.com/chriskunda">
-                            <i className="fa-brands fa-github git-icon"></i>
-                        </a>
-                        <a className="icon3" href="mailto:christianira2003@gmail.com">
-                            <i className="fa-regular fa-envelope email-icon"></i>
-                        </a>
-                        <a className="icon4" href="">
-                            <i className="fa-brands fa-whatsapp whats-icon"></i>
-                        </a>
- 
+                        <div className="contact-icons">
+                            <a className="icon1" href="">
+                                <i className="fa-brands fa-instagram ig-icon"></i>
+                            </a>
+                            <a className="icon2" href="https://github.com/chriskunda">
+                                <i className="fa-brands fa-github git-icon"></i>
+                            </a>
+                            <a className="icon3" href="mailto:christianira2003@gmail.com">
+                                <i className="fa-regular fa-envelope email-icon"></i>
+                            </a>
+                            <a className="icon4" href="">
+                                <i className="fa-brands fa-whatsapp whats-icon"></i>
+                            </a>
+    
+                        </div>
+
                     </div>
 
                 </div>
+                
+                <div className="info">
+                    <form action="" onSubmit={submitinfo}>
+                        
+                        <input 
+                            type="text" 
+                            placeholder="Full Name" 
+                            value={name} 
+                            onChange={(e) => handleNameChange(e)}
+                        />
 
-            </div>
-            
-            <div className="info">
-                <form action="" onSubmit={submitinfo}>
-                    
-                    <input 
-                        type="text" 
-                        placeholder="Full Name" 
-                        value={name} 
-                        onChange={(e) => handleNameChange(e)}
-                    />
+                        <input
+                            type="email" 
+                            placeholder="Email" 
+                            value={email} 
+                            onChange={(e) => setEmail(e.target.value)}
+                        />
 
-                    <input
-                        type="email" 
-                        placeholder="Email" 
-                        value={email} 
-                        onChange={(e) => setEmail(e.target.value)}
-                    />
+                        <textarea 
+                        name="" 
+                        id="" 
+                        placeholder="Your request" 
+                        value={message} 
+                        onChange={(e) => setMessage(e.target.value)}>
+                        </textarea>
 
-                    <textarea 
-                    name="" 
-                    id="" 
-                    placeholder="Your request" 
-                    value={message} 
-                    onChange={(e) => setMessage(e.target.value)}>
-                    </textarea>
+                        <button className="submit-button">Submit</button>
 
-                    <button className="submit-button">Submit</button>
-
-                </form>
-            </div>
+                    </form>
+                </div>
             </div>
         </div>
     )

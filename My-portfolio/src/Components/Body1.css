@@ -40,18 +40,18 @@ html{
 
 .he{
     font-weight: 500;
-    font-size: 50px;
+    font-size: 60px;
 }
 .head1{
     padding-top: 10px;
-    font-size: 60px;
+    font-size: 70px;
 }
 .head2{
     padding-top: 10px;
-    font-size: 60px;
+    font-size: 70px;
 }
 .names-introduction>p{
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     font-family: "Annie Use Your Telescope", cursive;
 }
@@ -62,14 +62,17 @@ html{
 }
 .butt{
     border-radius: 20px;
-    padding: 8px;
-    width: 30%;
+    margin-top: 7px;
+    padding: 10px;
+    width: 40%;
     display: flex;
     justify-content: center;
     border: 1px solid gray;
     color: black;
     background-color: rgb(226, 227, 227);
 }
+
+
 
 .butt:hover{
     background-color: rgb(215, 218, 219);
@@ -87,7 +90,7 @@ html{
 
 .port-pic{
     height: auto;
-    width: 350px;
+    width: 390px;
     margin-top: 60px;
 }
 

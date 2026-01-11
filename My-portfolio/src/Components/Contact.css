@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -11,10 +14,10 @@ a:hover{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 555px;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
-    background-color: rgb(242, 242, 242);
+    /* background-color: rgb(242, 242, 242); */
 }
 
 .down-part{
@@ -23,7 +26,7 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    height: 400px;
+    height: 430px;
     margin-top: 30px;
     border: 1px solid black;
     border-radius: 0px 20px 0px 20px;
@@ -65,23 +68,22 @@ a:hover{
 }
 .contact-intro{
     height: auto;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    gap: 30px;
+    justify-content: space-between;
+    line-height: 1;
+    align-items: start; 
     
-    
-    background-color: red;
 }
 
 .h1-contact{
     font-size: 70px;
+    display: flex;
 }
 .p-contact{
     font-size: 20px;
-
+    font-weight: bold;
+    font-family: "Annie Use Your Telescope", cursive;
 }
 
 .contact-icons{
