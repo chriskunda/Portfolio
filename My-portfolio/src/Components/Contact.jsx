@@ -37,6 +37,7 @@ const Contact = () => {
         <div className="contact-form" id="contact-section">
             <div className="title">
                 <h1>Get in Touch</h1>
+                <hr />
                 <p>Let's convert your ideas into successful projects</p>
             </div>
             

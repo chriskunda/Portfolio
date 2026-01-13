@@ -72,8 +72,6 @@ html{
     background-color: rgb(226, 227, 227);
 }
 
-
-
 .butt:hover{
     background-color: rgb(215, 218, 219);
 }
@@ -102,6 +100,7 @@ html{
         justify-content: center;
         align-items: center;
         height: 350px;
+        background-color: white;
     }
     .foto{
         display: none;

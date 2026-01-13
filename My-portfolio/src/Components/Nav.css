@@ -1,8 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 nav{
     width: 100%;
-    height: 50px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -14,7 +14,9 @@ nav{
 .chris{
     display: none;
 }
-
+.portfolio-h1{
+    display: none;
+}
 
 .links{
     width: 33.3333333%;
@@ -36,10 +38,11 @@ a:hover{
 
 @media (max-width: 500px){
     nav{
-        height: 60px;
+        height: 70px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 
     .chris{
@@ -54,7 +57,17 @@ a:hover{
     }
 
     .burger-icon{
-        font-size: 25px;
-        margin-left: 15px;
+        font-size: 32px;
+        padding-left: 30px;
+    }
+
+    .portfolio-h1{
+        display: flex;
+        padding-right: 17px;
+        font-size: 14px;
+    }
+
+    .portfolio-h1>h1{
+        font-family: "Orbitron", sans-serif;
     }
 }

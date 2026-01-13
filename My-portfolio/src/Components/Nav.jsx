@@ -16,9 +16,9 @@ function Nav() {
       <a href="#skills-section">Skills</a>
       <a href="#contact-section">Contact</a>
     </div>
-    {/* <div className="nav-button">
-      <button className="buto">Contact</button>
-    </div> */}
+    <div className="portfolio-h1">
+      <h1>Poltfolio.</h1>
+    </div>
   </nav>
 
   )

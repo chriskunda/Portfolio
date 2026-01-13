@@ -43,6 +43,11 @@ html{
 }
 
 @media (max-width: 500px) {
+
+    .parent-about{
+        background-color: white;
+    }
+
     .about-container{
         display: flex;
         flex-direction: column;

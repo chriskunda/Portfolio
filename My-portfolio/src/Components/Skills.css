@@ -8,6 +8,7 @@ html{
 .parent-skills{
     background-color: rgb(242, 242, 242);
     height: auto;
+    
 }
 
 .skills{
@@ -55,8 +56,28 @@ html{
 }
 
 @media (max-width: 500px) {
+
     .parent-skills{
-        
+        background-color: white;
     }
+    
+    .tools>div{
+        border: none;
+        box-shadow: none;
+        height: 200px;
+
+    }
+
+    .tools{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .tools>div>i{
+        font-size: 150px;
+    }
+
+
 }
 
