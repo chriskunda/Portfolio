@@ -60,7 +60,7 @@ const Contact = () => {
                             <a className="icon3" href="mailto:christianira2003@gmail.com">
                                 <i className="fa-regular fa-envelope email-icon"></i>
                             </a>
-                            <a className="icon4" href="">
+                            <a className="icon4" href="https://wa.me/250798697759">
                                 <i className="fa-brands fa-whatsapp whats-icon"></i>
                             </a>
     
