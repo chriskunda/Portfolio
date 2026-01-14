@@ -124,6 +124,11 @@ function Projects() {
 
                 </div>
             </div>
+
+            <div className="project-button-container">
+                <button className="project-button" onClick={()=>window.open("https://github.com/chriskunda")}><i className="fa-brands fa-github git-icon"></i> Visit my github </button>
+            </div>
+
         </div>
     )
 }

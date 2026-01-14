@@ -51,7 +51,8 @@ html{
     font-size: 70px;
 }
 .names-introduction>p{
-    font-size: 20px;
+    width: max-content;
+    font-size: 19.5px;
     font-weight: bold;
     font-family: "Annie Use Your Telescope", cursive;
 }
@@ -128,5 +129,56 @@ html{
         width: 193.6px;
         padding: 12px;
         font-size: 10px;
+    }
+}
+
+@media (min-width:501px) and (max-width:1024px) {
+    .body-section{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    background-color: rgb(242, 242, 242);
+    }
+    .foto{
+        display: none;
+    }
+    .names{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        width: 100%;
+    }
+    .he{
+        font-size: 40px;
+    }
+    .head1{
+        font-size: 40px;
+    }
+
+    .names-introduction{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .names-introduction>p{
+        font-size: 18px;
+    }
+    .but{
+        /* width: 100%; */
+    }
+    .butt{
+        width: 193.6px;
+        padding: 12px;
+        font-size: 10px;
+    }
+
+    .hidename{
+        display: none;
     }
 }

@@ -4,7 +4,7 @@ function Skills() {
     return(
             <div className="parent-skills" id="skills-section">
                 <div className="skills">
-                    <h2>SKILL SET</h2>
+                    <h2>SKILLS</h2>
                     <div className="tools">
                         <div>
                             <i class="fa-brands fa-html5"></i>

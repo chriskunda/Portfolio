@@ -37,7 +37,6 @@ const Contact = () => {
         <div className="contact-form" id="contact-section">
             <div className="title">
                 <h1>Get in Touch</h1>
-                <hr />
                 <p>Let's convert your ideas into successful projects</p>
             </div>
             
@@ -52,11 +51,11 @@ const Contact = () => {
                         </div>
 
                         <div className="contact-icons">
-                            <a className="icon1" href="">
+                            <a className="icon1" href="https://www.instagram.com/ikristian2.0/">
                                 <i className="fa-brands fa-instagram ig-icon"></i>
                             </a>
-                            <a className="icon2" href="https://github.com/chriskunda">
-                                <i className="fa-brands fa-github git-icon"></i>
+                            <a className="icon2" href="https://www.linkedin.com/feed/">
+                                <i class="fa-brands fa-linkedin-in linkedin-icon"></i>
                             </a>
                             <a className="icon3" href="mailto:christianira2003@gmail.com">
                                 <i className="fa-regular fa-envelope email-icon"></i>

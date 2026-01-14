@@ -11,10 +11,10 @@ function Nav() {
      <i className="fa-solid fa-bars burger-icon"></i>
     </div>    
     <div className="links">
-      <a href="#body">Home</a>
-      <a href="#project-section">Projects</a>
-      <a href="#skills-section">Skills</a>
-      <a href="#contact-section">Contact</a>
+      <a className='As' href="#body">Home</a>
+      <a className='As' href="#project-section">Projects</a>
+      <a className='As' href="#skills-section">Skills</a>
+      <a className='As' href="#contact-section">Contact</a>
     </div>
     <div className="portfolio-h1">
       <h1>Poltfolio.</h1>
