@@ -5,8 +5,6 @@ import "./Contact.css"
 const Contact = () => {
 
     const [name, setName] = useState ("");
-
-
     const [email, setEmail] = useState ("");
     const [message, setMessage] = useState ("");
 
@@ -74,21 +72,23 @@ const Contact = () => {
                     <form action="" onSubmit={submitinfo}>
                         
                         <input 
-                            type="text" 
+                            type="text"
+                            name="name"
                             placeholder="Full Name" 
                             value={name} 
                             onChange={(e) => handleNameChange(e)}
                         />
 
                         <input
-                            type="email" 
+                            type="email"
+                            name="email"
                             placeholder="Email" 
                             value={email} 
                             onChange={(e) => setEmail(e.target.value)}
                         />
 
                         <textarea 
-                        name="" 
+                        name="message" 
                         id="" 
                         placeholder="Your request" 
                         value={message} 
