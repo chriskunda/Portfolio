@@ -53,7 +53,7 @@ const Contact = () => {
                                 <i className="fa-brands fa-instagram ig-icon"></i>
                             </a>
                             <a className="icon2" href="https://www.linkedin.com/feed/">
-                                <i class="fa-brands fa-linkedin-in linkedin-icon"></i>
+                                <i className="fa-brands fa-linkedin-in linkedin-icon"></i>
                             </a>
                             <a className="icon3" href="mailto:christianira2003@gmail.com">
                                 <i className="fa-regular fa-envelope email-icon"></i>
