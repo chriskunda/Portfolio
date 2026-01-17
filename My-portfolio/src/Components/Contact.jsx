@@ -14,11 +14,6 @@ const Contact = () => {
     const [message, setMessage] = useState ("");
 
 
-    const handleNameChange = (e) => {
-        setName(e.target.value)
-    };
-
-
     const submitinfo = (e) => {
         
         e.preventDefault();
