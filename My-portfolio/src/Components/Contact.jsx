@@ -23,19 +23,23 @@ const Contact = () => {
         
         e.preventDefault();
 
+        const serviceId = 'service_5uuu4fr';
+        const templateId = 'template_lkkxj8c';
+        const publicKey = 'KSD9qQE1VqpulzCmU';
+
+        const templateParams = {
+            name:name,
+            email:email,
+            message:message
+        };
+
 
         if (!name || !email || !message) {
             alert("Please fill all fields")
             return
             } 
         else {
-            emailjs.send("service_5uuu4fr", "template_lkkxj8c", {
-                name:name,
-                email:email,
-                message:message
-            },
-            "KSD9qQE1VqpulzCmU"
-            )
+            emailjs.send(serviceId, templateId, publicKey,templateParams)
 
             .then(()=>{
                 alert("Message sent saccessfully!!")
@@ -100,7 +104,7 @@ const Contact = () => {
                         <input 
                             type="text"
                             name="name"
-                            placeholder="Full Name" 
+                            placeholder="What's your name?" 
                             value={name} 
                             onChange={(e) => handleNameChange(e)}
                         />
@@ -108,7 +112,7 @@ const Contact = () => {
                         <input
                             type="email"
                             name="email"
-                            placeholder="Email" 
+                            placeholder="Your Email?" 
                             value={email} 
                             onChange={(e) => setEmail(e.target.value)}
                         />
@@ -116,7 +120,7 @@ const Contact = () => {
                         <textarea 
                         name="message" 
                         id="" 
-                        placeholder="Your request" 
+                        placeholder="Your request?" 
                         value={message} 
                         onChange={(e) => setMessage(e.target.value)}>
                         </textarea>
