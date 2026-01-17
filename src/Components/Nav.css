@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    top: 0;
+    position: relative;
+}
+
+.chris{
+    display: none;
+}
+.portfolio-h1{
+    display: none;
+}
+
+.links{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.As{
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    font-family: "Metrophobic", sans-serif;
+}
+
+a:hover{
+    color: grey; 
+}
+
+@media (max-width: 767px){
+    nav{
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chris{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    }
+
+    .links{
+        display: none;
+    }
+
+    .burger-icon{
+        font-size: 32px;
+        padding-left: 30px;
+    }
+
+    .portfolio-h1{
+        display: flex;
+        padding-right: 17px;
+        font-size: 14px;
+    }
+
+    .portfolio-h1>h1{
+        font-family: "Orbitron", sans-serif;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .links{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

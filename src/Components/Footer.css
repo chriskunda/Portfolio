@@ -1,0 +1,13 @@
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-top: 1px solid rgb(232, 232, 232);
+    height: 33px;
+}
+
+.foot-p{
+    display: flex;
+}

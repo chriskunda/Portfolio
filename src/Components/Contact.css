@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 555px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    /* background-color: rgb(242, 242, 242); */
+}
+
+.down-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 430px;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 0px 20px 0px 20px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    line-height: 0;
+    margin-top: 10px;
+}
+
+.title>h1{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Metrophobic", sans-serif;
+}
+.title>p{
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+
+.talk{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    line-height: 0;
+}
+
+.contact-words{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contact-intro{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1;
+    align-items: start; 
+    width: max-content;
+}
+
+.h1-contact{
+    font-size: 70px;
+    display: flex;
+}
+.p-contact{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Annie Use Your Telescope", cursive;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 8px;
+}
+
+.contact-icons>a{
+    margin-top: 5px;
+    padding: 4px;
+    font-size: 23px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 30%;
+    height: 300px;
+    padding: 10px;
+}
+
+.info>form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    outline: none;
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+
+textarea{
+    outline: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 80.5%;
+    height: 90px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.submit-button{
+    margin-left: 10px;
+    width: 35%;
+    border-radius: 10px;
+    padding: 8px;
+    border: 1px solid gray;
+    background-color: rgb(226, 227, 227);
+}
+
+.submit-button:hover{
+    background-color: rgb(215, 218, 219);
+}
+
+
+.ig-icon {
+    color: black;
+}
+
+.linkedin-icon{
+    color: black;
+}
+
+.email-icon{
+    color: black;
+}
+
+.whats-icon{
+    color: black;
+}
+
+@media (max-width: 500px) {
+
+    .contact-form{
+        height: 480px;
+    }
+
+    .down-part{
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+    }
+
+    .contact-intro{
+        display: none;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+        border: none;      
+    }
+
+    .contact-words{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .contact-icons>a{
+        font-size: 17px;
+    }
+
+    input, textarea {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    .submit-button{
+        width: 50%;
+        padding: 7px;
+        margin-left: 0;
+    }
+
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width:501px) and (max-width:1024px){
+    
+    .contact-form{
+        height: 480px;
+    }
+
+    .down-part{
+        display: flex;
+        flex-direction: column-reverse;
+        border: none;
+    }
+
+    .contact-intro{
+        display: none;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 94%;
+        border: none;      
+    }
+
+    .contact-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-icons>a{
+        font-size: 17px;
+    }
+
+    input, textarea {
+        margin-left: 0;
+        width: 95%;
+    }
+
+    .submit-button{
+        width: 216px;
+        padding: 7px;
+        margin-left: 0;
+    }
+
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
