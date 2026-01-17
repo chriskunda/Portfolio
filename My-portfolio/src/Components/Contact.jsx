@@ -1,3 +1,8 @@
+import emailjs from "@emailjs/browser";
+
+// ✅ initialize EmailJS ONCE
+emailjs.init("KSD9qQE1VqpulzCmU");
+
 import { useState, useEffect } from "react";
 
 import "./Contact.css"
@@ -14,19 +19,40 @@ const Contact = () => {
     };
 
 
-    const submitinfo = (s) => {
-        s.preventDefault();
+    const submitinfo = (e) => {
+        
+        e.preventDefault();
 
 
         if (!name || !email || !message) {
             alert("Please fill all fields")
-        } else {
-            
-            console.log(name, email, message)
+            return
+            } 
+        else {
+            emailjs.send("service_5uuu4fr", "template_lkkxj8c", {
+                name:name,
+                email:email,
+                message:message
+            },
+            "KSD9qQE1VqpulzCmU"
+            )
 
-            setName("")
-            setEmail("")
-            setMessage("")
+            .then(()=>{
+                alert("Message sent saccessfully!!")
+
+                setName("")
+                setEmail("")
+                setMessage("")
+            })
+
+            .catch((error)=>{
+                console.log(error)
+                alert("Failed to send your message")
+            })
+            
+            // console.log(name, email, message)
+
+
         }
         
     }
@@ -95,7 +121,7 @@ const Contact = () => {
                         onChange={(e) => setMessage(e.target.value)}>
                         </textarea>
 
-                        <button className="submit-button">Submit</button>
+                        <button className="submit-button" type="submit">Submit</button>
 
                     </form>
                 </div>
