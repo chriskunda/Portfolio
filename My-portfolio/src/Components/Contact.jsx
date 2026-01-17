@@ -1,8 +1,3 @@
-import emailjs from "@emailjs/browser";
-
-// ✅ initialize EmailJS ONCE
-emailjs.init("KSD9qQE1VqpulzCmU");
-
 import { useState, useEffect } from "react";
 
 import "./Contact.css"
@@ -60,7 +55,7 @@ const Contact = () => {
         <div className="contact-form" id="contact-section">
             <div className="title">
                 <h1>Get in Touch</h1>
-                <p>Let's convert your ideas into successful projects</p>
+                <p>Let's convert your ideas into successful project</p>
             </div>
             
             <div className="down-part">
