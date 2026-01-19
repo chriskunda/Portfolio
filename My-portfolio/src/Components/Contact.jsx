@@ -7,11 +7,12 @@ const Contact = () => {
     const [name, setName] = useState ("");
     const [email, setEmail] = useState ("");
     const [message, setMessage] = useState ("");
+    const [loading, setLoading] = useState (false);
 
 
     const submitinfo = (e) => {
         
-        e.preventDefault();
+       setLoading(true)
 
         const serviceId = 'service_5uuu4fr';
         const templateId = 'template_lkkxj8c';
@@ -23,7 +24,42 @@ const Contact = () => {
             message:message
         };
 
+        const payload = {
+            service_id: serviceId,
+            template_id: templateId,
+            user_id: publicKey,
+            template_params: templateParams
+        }
 
+        e.preventDefault();
+
+          async function sendEmail() {
+            try {
+                const response = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload),
+                });
+                
+                setLoading(false)
+                
+                if (response.ok) {
+                    console.log('Success:', response);
+                    window.location.reload();
+                } else {
+                    alert("Error sending email");
+                    console.error('Sending email failed:', payload);
+                }
+            } catch (error) {
+                setLoading(false);
+                console.error('Error:', error);
+                alert('Error: Something went wrong. Please try again.');
+            }
+        }
+        sendEmail();
+    };
+
+        /*
         if (!name || !email || !message) {
             alert("Please fill all fields")
             return
@@ -44,12 +80,11 @@ const Contact = () => {
                 alert("Failed to send your message")
             })
             
-            // console.log(name, email, message)
-
-
+            console.log(name, email, message)
         }
+        */
         
-    }
+    
 
     return(
         <div className="contact-form" id="contact-section">
@@ -96,7 +131,8 @@ const Contact = () => {
                             name="name"
                             placeholder="What's your name?" 
                             value={name} 
-                            onChange={(e) => handleNameChange(e)}
+                            onChange={(e) => setName(e.target.value)}
+                            required
                         />
 
                         <input
@@ -105,6 +141,7 @@ const Contact = () => {
                             placeholder="Your Email?" 
                             value={email} 
                             onChange={(e) => setEmail(e.target.value)}
+                            required
                         />
 
                         <textarea 
@@ -112,16 +149,21 @@ const Contact = () => {
                         id="" 
                         placeholder="Your request?" 
                         value={message} 
-                        onChange={(e) => setMessage(e.target.value)}>
+                        onChange={(e) => setMessage(e.target.value)}
+                        required
+                        >
                         </textarea>
 
-                        <button className="submit-button" type="submit">Submit</button>
+                        <button className="submit-button" type="submit">
+                            {loading ? "Loading..." : "Submit"}
+                        </button>
 
                     </form>
                 </div>
             </div>
         </div>
     )
-}
+
+ }
 
 export default Contact;
