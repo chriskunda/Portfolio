@@ -9,4 +9,14 @@
     scroll-behavior: smooth;
 }
 
+@media (max-width: 500px){
+    .parent-container{
+        scroll-behavior: smooth;
+    }
+}
 
+@media (min-width:501px) and (max-width:1024px) {
+    .parent-container{
+    scroll-behavior: smooth;
+    }
+}
