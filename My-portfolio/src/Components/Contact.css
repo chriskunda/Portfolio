@@ -203,7 +203,7 @@ textarea{
         justify-content: center;
         align-items: center;
         width: 100vw;
-        margin-bottom: 45px;
+        padding-bottom: 20px;
     }
 
     .contact-icons>a{
