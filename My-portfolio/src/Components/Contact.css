@@ -3,10 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
 
 
-html{
-    scroll-behavior: smooth;
-}
-
 a:hover{
     cursor: pointer;
 }
