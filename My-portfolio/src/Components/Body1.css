@@ -9,7 +9,6 @@
     align-items: end;
     justify-content: space-evenly;
     background-color: rgb(242, 242, 242);
-    /* background: linear-gradient(to bottom right, #6fc3f700, #c2fdffb3); */
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 100px;
 }
