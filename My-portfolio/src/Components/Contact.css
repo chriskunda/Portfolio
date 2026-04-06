@@ -1,283 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
-
-
-a:hover{
-    cursor: pointer;
+.contact-form {
+  background-color: var(--bg);
+  border-top: 0.5px solid var(--border);
 }
 
-.contact-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 555px;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    /* background-color: rgb(242, 242, 242); */
+.contact-inner-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6rem;
+  align-items: start;
 }
 
-.down-part{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: 430px;
-    margin-top: 30px;
-    border: 1px solid black;
-    border-radius: 0px 20px 0px 20px;
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+  margin-bottom: 0;
 }
 
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    line-height: 0;
-    margin-top: 10px;
+.contact-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
 }
 
-.title>h1{
-    font-size: 45px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: "Metrophobic", sans-serif;
-}
-.title>p{
-    font-size: 17px;
-    margin-top: 15px;
+.title > h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 3.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
 }
 
+.title > h1 em { font-style: italic; }
 
-.talk{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40%;
-    height: auto;
-    line-height: 0;
+.title > p {
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
 }
 
-.contact-words{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-.contact-intro{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    line-height: 1;
-    align-items: start; 
-    width: max-content;
+/* social links list */
+.contact-links-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.h1-contact{
-    font-size: 70px;
-    display: flex;
-}
-.p-contact{
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Annie Use Your Telescope", cursive;
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 0;
 }
 
-.contact-icons{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    margin-top: 8px;
+.contact-icons > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-top: 0.5px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.87rem;
+  transition: all 0.3s;
 }
 
-.contact-icons>a{
-    margin-top: 5px;
-    padding: 4px;
-    font-size: 23px;
+.contact-icons > a:last-child {
+  border-bottom: 0.5px solid var(--border);
 }
 
-.info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid black;
-    border-radius: 20px;
-    width: 30%;
-    height: 300px;
-    padding: 10px;
+.contact-icons > a:hover {
+  padding-left: 0.5rem;
+  color: #555;
 }
 
-.info>form{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.contact-icon-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--muted);
 }
 
-input{
-    outline: none;
-    padding-left: 10px;
-    margin-left: 10px;
-    width: 80%;
-    height: 35px;
-    border-radius: 10px;
-    border: 1px solid grey;
+/* right side — form */
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  height: auto;
 }
 
-
-textarea{
-    outline: none;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 10px;
-    width: 80.5%;
-    height: 90px;
-    border-radius: 10px;
-    border: 1px solid grey;
+.info > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
 }
 
-.submit-button{
-    margin-left: 10px;
-    width: 35%;
-    border-radius: 10px;
-    padding: 8px;
-    border: 1px solid gray;
-    background-color: rgb(226, 227, 227);
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
-.submit-button:hover{
-    background-color: rgb(215, 218, 219);
+.form-group label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
 }
 
-
-.ig-icon {
-    color: black;
+input {
+  outline: none;
+  padding: 0.7rem 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  border: none;
+  border-bottom: 0.5px solid var(--border-strong);
+  background: transparent;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.93rem;
+  font-weight: 300;
+  transition: border-color 0.3s;
 }
 
-.linkedin-icon{
-    color: black;
+input:focus {
+  border-bottom-color: var(--text);
 }
 
-.email-icon{
-    color: black;
+textarea {
+  outline: none;
+  padding: 0.7rem 0;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 0.5px solid var(--border-strong);
+  background: transparent;
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.93rem;
+  font-weight: 300;
+  resize: none;
+  transition: border-color 0.3s;
 }
 
-.whats-icon{
-    color: black;
+textarea:focus {
+  border-bottom-color: var(--text);
 }
 
-@media (max-width: 500px) {
-
-    .contact-form{
-        height: 480px;
-    }
-
-    .down-part{
-        display: flex;
-        flex-direction: column-reverse;
-        border: none;
-    }
-
-    .contact-intro{
-        display: none;
-    }
-
-    .info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 94%;
-        border: none;      
-    }
-
-    .contact-words{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .contact-icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        padding-bottom: 35px;
-    }
-
-    .contact-icons>a{
-        font-size: 17px;
-    }
-
-    input, textarea {
-        margin-left: 0;
-        width: 95%;
-    }
-
-    .submit-button{
-        width: 50%;
-        padding: 7px;
-        margin-left: 0;
-    }
-
-    form{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+.submit-button {
+  margin: 0;
+  width: 100%;
+  padding: 0.9rem;
+  border-radius: 0;
+  border: none;
+  background: var(--text);
+  color: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-@media (min-width:501px) and (max-width:1024px){
-    
-    .contact-form{
-        height: 480px;
-    }
+.submit-button:hover {
+  background: #333;
+}
 
-    .down-part{
-        display: flex;
-        flex-direction: column-reverse;
-        border: none;
-    }
+/* hide old layout elements */
+.down-part { display: contents; }
+.talk { display: contents; }
+.contact-words { display: contents; }
+.contact-intro { display: none; }
 
-    .contact-intro{
-        display: none;
-    }
+@media (max-width: 767px) {
+  .contact-inner-wrap {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 5rem 1.5rem;
+  }
+}
 
-    .info{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 94%;
-        border: none;      
-    }
-
-    .contact-icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contact-icons>a{
-        font-size: 17px;
-    }
-
-    input, textarea {
-        margin-left: 0;
-        width: 95%;
-    }
-
-    .submit-button{
-        width: 216px;
-        padding: 7px;
-        margin-left: 0;
-    }
-
-    form{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-inner-wrap {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 6rem 3rem;
+  }
 }

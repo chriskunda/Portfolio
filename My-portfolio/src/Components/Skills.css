@@ -1,96 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
-
-
-
-
-.parent-skills{
-    background-color: rgb(242, 242, 242);
-    height: auto;
-    
+.parent-skills {
+  background-color: var(--bg);
+  border-top: 0.5px solid var(--border);
 }
 
-.skills{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    background-color: white;
+.skills {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
-.tools{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: auto;
-    padding-top: 50px;
+.skills-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
 }
 
-.tools>div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 60px 60px 60px 60px ;
-    width: 10%;
-    height: 250px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 6px black;
+.skills > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 3.5vw, 3.8rem);
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-transform: none;
+  letter-spacing: -0.01em;
 }
 
-.tools>div>i{
-    font-size:80px ;
+.skills > h2 em { font-style: italic; }
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 0.5px solid var(--border-strong);
 }
 
-.skills>h2{
-    display: flex;
-    justify-content: center;
-    font-size: 45px;
-    font-family: "Metrophobic", sans-serif;
+.tools > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  border-right: 0.5px solid var(--border-strong);
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  border-top: none;
+  border-bottom: none;
+  box-shadow: none;
+  transition: background 0.3s;
 }
 
-@media (max-width: 500px) {
-
-    .parent-skills{
-        background-color: white;
-    }
-    
-    .tools>div{
-        border: none;
-        box-shadow: none;
-        height: 200px;
-
-    }
-
-    .tools{
-        display: flex;
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
-    .tools>div>i{
-        font-size: 150px;
-    }
-
+.tools > div:last-child {
+  border-right: none;
 }
 
-@media (min-width:501px) and (max-width:1024px){
+.tools > div:hover {
+  background: var(--surface);
+}
 
-    .tools>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 60px 60px 60px 60px ;
-        width: 10%;
-        height: 250px;
-        border: 0 ;
-        box-shadow: 0 0 ;
-    }
+.tools > div > i {
+  font-size: 2.8rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.tools > div > h2 {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 767px) {
+  .skills {
+    padding: 5rem 1.5rem;
+  }
+
+  .tools {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tools > div {
+    border-bottom: 0.5px solid var(--border-strong);
+    padding: 2.5rem 1rem;
+  }
+
+  .tools > div:nth-child(even) {
+    border-right: none;
+  }
+
+  .tools > div:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .tools > div > i {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills {
+    padding: 6rem 3rem;
+  }
+
+  .tools > div {
+    padding: 2.5rem 1rem;
+  }
+
+  .tools > div > i {
+    font-size: 2.2rem;
+  }
 }

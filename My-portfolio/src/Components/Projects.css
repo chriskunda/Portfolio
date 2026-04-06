@@ -1,167 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap');
+.proj {
+  background-color: var(--bg);
+  border-top: 0.5px solid var(--border);
+  padding: 8rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+.proj-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
 
+.proj > h1,
+.projects-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 3.5vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
 
+.projects-header h1 em { font-style: italic; }
 
-.proj{
-    display: flex;
+.Ps {
+  max-width: 260px;
+  text-align: right;
+}
+
+.Ps > p {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.8;
+  width: 100%;
+  text-align: right;
+}
+
+.div-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 0.5px solid var(--border-strong);
+}
+
+.div-container > div {
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 0;
+  padding: 2.5rem;
+  border-right: 0.5px solid var(--border-strong);
+  border-bottom: 0.5px solid var(--border-strong);
+  transition: background 0.35s;
+  cursor: pointer;
+  height: auto;
+}
+
+.div-container > div:nth-child(even) {
+  border-right: none;
+}
+
+.div-container > div:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+.div-container > div:hover {
+  background: var(--surface);
+  box-shadow: none;
+}
+
+.second { width: 100%; }
+
+.project-num {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+}
+
+.second1-div {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+
+.second1-div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  filter: grayscale(100%);
+  transition: filter 0.4s;
+}
+
+.div-container > div:hover .second1-div > img {
+  filter: grayscale(60%);
+}
+
+.second2-div {
+  padding: 0;
+  height: auto;
+}
+
+.h2-i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.h2-i > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.h2-i > i {
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: transform 0.3s;
+}
+
+.div-container > div:hover .h2-i > i {
+  transform: translate(3px, -3px);
+}
+
+.second2-div > div > p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+
+.project-button {
+  padding: 0.85rem 2.5rem;
+  background: var(--text);
+  color: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.project-button:hover {
+  background: #333;
+}
+
+@media (max-width: 767px) {
+  .proj {
+    padding: 5rem 1.5rem;
+  }
+
+  .projects-header {
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: auto;
-    padding-bottom: 25px;
-    width: 100%;
-    background-color: rgb(242, 242, 242);
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .Ps { text-align: left; max-width: 100%; }
+  .Ps > p { text-align: left; }
+
+  .div-container {
+    grid-template-columns: 1fr;
+  }
+
+  .div-container > div {
+    border-right: none;
+  }
+
+  .div-container > div:nth-last-child(-n+2) {
+    border-bottom: 0.5px solid var(--border-strong);
+  }
+
+  .div-container > div:last-child {
+    border-bottom: none;
+  }
 }
 
-.proj>h1{
-    display: flex;
-    justify-content: center;
-    font-size: 45px;
-    font-family: "Stack Sans Notch", sans-serif;
-    height: 25px;
-}
-
-.Ps{
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-}
-
-.Ps>p{
-    width: 60%;
-    text-align: center;
-}
-
-
-.div-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    
-}
-.div-container>div{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    height: 332px;
-    border-radius: 10px;
-    margin-top: 40px;
-}
-
-.div-container>div:hover{
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-
-.second{
-    width: 400px;
-    height: 332px;
-}
-.second1-div{
-    width: 400px;
-    height: 200px;
-}
-.second1-div>img{
-    width: 400px;
-    height: 200px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.second2-div{
-    padding: 10px;
-    height: 100px;
-}
-.h2-i{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-}
-
-.h2-i>h2{
-    font-family: "PT Sans", sans-serif;
-    font-weight:500;
-}
-
-.project-button-container{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 25px;
-}
-
-.project-button{
-    width: max-content;
-    height: 35px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 20px;
-    border: 1px solid gray;
-    background-color: rgb(226, 227, 227);
-    font-family: "Metrophobic", sans-serif;
-}
-
-.project-button:hover{
-    background-color: rgb(215, 218, 219);
-}
-
-.git-icon{
-    color: black;
-}
-
-@media (max-width: 500px) {
-    .proj{
-        height: auto;
-        overflow: hidden;
-        background-color: white;
-    }
-
-    .Ps>p{
-        font-size: 10px;
-    }
-
-    .div-container{
-        width: 100%;
-        height: auto;
-    }
-
-    .second{
-        width: 90%;
-        height: 332px;
-    }
-
-    .second1-div{
-        width: 100%;
-    }
-
-    .second1-div>img{
-        width: 100%;
-        height: 200px;
-    }
-
-    .project-button{
-        width: 40%;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 501px) and (max-width: 1024px) {
-    .project-button{
-        width: max-content;
-        height: 35px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .proj {
+    padding: 6rem 3rem;
+  }
 }

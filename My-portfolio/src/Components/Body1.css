@@ -1,178 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap');
 
-
-.body-section{
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    top: 0;
-    align-items: end;
-    justify-content: space-evenly;
-    background-color: rgb(242, 242, 242);
-    border-bottom-right-radius: 100px;
-    border-bottom-left-radius: 100px;
+.body-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 9rem 4rem 5rem 8rem;
+  background-color: var(--bg);
+  border-bottom: 0.5px solid var(--border);
 }
 
-.names{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: 20px;
-    margin-right: 70px;
+.hero-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-
-
-.he, .head1, .head2 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding: 0 !important;
-    line-height: 1;
+.hero-tag::before {
+  content: '';
+  width: 36px;
+  height: 0.5px;
+  background: var(--muted);
+  display: inline-block;
 }
 
-.he{
-    font-weight: 500;
-    font-size: 60px;
-}
-.head1{
-    padding-top: 10px;
-    font-size: 70px;
-}
-.head2{
-    padding-top: 10px;
-    font-size: 70px;
-}
-.names-introduction>p{
-    width: max-content;
-    font-size: 19.5px;
-    font-weight: bold;
-    font-family: "Annie Use Your Telescope", cursive;
-}
-.but{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-.butt{
-    border-radius: 20px;
-    margin-top: 7px;
-    padding: 10px;
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    border: 1px solid gray;
-    color: black;
-    background-color: rgb(226, 227, 227);
+.hero-full-name {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
-.butt:hover{
-    background-color: rgb(215, 218, 219);
+.names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 900px;
 }
 
-.foto{
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
+.names-introduction {
+  display: flex;
+  flex-direction: column;
 }
 
-.port-pic{
-    height: auto;
-    width: 390px;
-    margin-top: 60px;
+.he {
+  font-family: 'DM Mono', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 500px) {
-    .body-section{
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 420px;
-        background-color: white;
-    }
-    .foto{
-        display: none;
-    }
-    .names{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-    }
-    .he{
-        font-size: 40px;
-    }
-    .head1,.head2{
-        font-size: 50px;
-    }
-
-    .names-introduction>p{
-        font-size: 13px;
-    }
-    .but{
-        width: 100%;
-    }
-    .butt{
-        width: 193.6px;
-        padding: 12px;
-        font-size: 10px;
-    }
+.head1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(4rem, 9vw, 9rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.8rem;
+  color: var(--text);
 }
 
-@media (min-width:501px) and (max-width:1024px) {
-    .body-section{
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    background-color: rgb(242, 242, 242);
-    }
-    .foto{
-        display: none;
-    }
-    .names{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 0;
-        width: 100%;
-    }
-    .he{
-        font-size: 40px;
-    }
-    .head1{
-        font-size: 40px;
-    }
+.names-introduction > p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  max-width: 440px;
+  line-height: 1.8;
+}
 
-    .names-introduction{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.but {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 
-    .names-introduction>p{
-        font-size: 18px;
-    }
-    .but{
-        /* width: 100%; */
-    }
-    .butt{
-        width: 193.6px;
-        padding: 12px;
-        font-size: 10px;
-    }
+.butt {
+  padding: 0.85rem 2.5rem;
+  background: var(--text);
+  color: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-    .hidename{
-        display: none;
-    }
+.butt:hover {
+  background: #333;
+}
+
+/* hide photo */
+.foto { display: none; }
+.port-pic { display: none; }
+.hidename { display: none; }
+
+@media (max-width: 767px) {
+  .body-section {
+    padding: 7rem 1.5rem 4rem 1.5rem;
+    min-height: 100vh;
+  }
+
+  .head1 {
+    font-size: clamp(3rem, 13vw, 5rem);
+  }
+
+  .butt {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.72rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .body-section {
+    padding: 8rem 3rem 4rem 3rem;
+  }
+
+  .head1 {
+    font-size: clamp(3.5rem, 8vw, 6rem);
+  }
 }

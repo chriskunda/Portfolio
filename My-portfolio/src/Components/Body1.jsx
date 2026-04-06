@@ -1,28 +1,24 @@
 import "./Body1.css"
-import PortPhoto from '../assets/Chris.png'
-
 
 function Body() {
-    return (
-        
-        <div className="body-section" id="body">
-            <div className="names">
-                <div className="names-introduction">
-                    <h2 className="he">Hey, I'm</h2>
-                    <h1 className="head1">CHRiSTiAN <br className="hidename" /> iRADUKUNDA</h1>
-                    {/* <h1 className="head2">iRADUKUNDA</h1> */}
-                    <p>Front-End Developer with a passion for clean and dope websites.</p>
-                </div>
-                <div className="but">
-                    <button className="butt">View my CV</button>
-                </div>
-            </div>
-            <div className="foto">
-                <img className="port-pic" src= {PortPhoto} alt="Chris photo" />
-            </div>
-            
+  return (
+    <div className="body-section" id="body">
+      <div className="names">
+        <div className="names-introduction">
+          <p className="he">Frontend Developer</p>
+          <h1 className="head1">Christian<br />Iradukunda</h1>
+          <p>Building interfaces that feel as good as they look —<br />clean code, thoughtful design, real results.</p>
         </div>
-    )
+        <div className="but">
+          <button className="butt" onClick={() => window.open('/cv.pdf')}>View my CV</button>
+          <button className="butt" style={{ background: 'transparent', color: 'var(--text)', border: '0.5px solid var(--border-strong)' }}
+            onClick={() => document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' })}>
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Body;
