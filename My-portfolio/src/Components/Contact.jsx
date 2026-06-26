@@ -47,7 +47,6 @@ const Contact = () => {
     <div className="contact-form" id="contact-section">
       <div className="contact-inner-wrap">
 
-        {/* LEFT — heading + social links */}
         <div className="title">
           <p className="contact-label">Get In Touch</p>
           <h1>Let's Work <em>Together</em></h1>
