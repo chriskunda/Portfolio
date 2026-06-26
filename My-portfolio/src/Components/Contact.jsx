@@ -78,7 +78,7 @@ const Contact = () => {
               <label>Your Name</label>
               <input
                 type="text"
-                placeholder="John Doe"
+                placeholder="Enter your names"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 required
@@ -88,7 +88,7 @@ const Contact = () => {
               <label>Your Email</label>
               <input
                 type="email"
-                placeholder="john@example.com"
+                placeholder="youremail@example.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
