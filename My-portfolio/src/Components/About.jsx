@@ -23,13 +23,13 @@ function About() {
           </div>
         </div>
         <div className="about">
-          <p>Hi! I'm Christian Iradukunda — a passionate front-end developer based in Kigali, Rwanda.
+          <p>Hi! I'm Christian Iradukunda, a passionate front-end developer based in Kigali, Rwanda.
             I love turning ideas into clean, responsive, and user-friendly websites. Currently building
             my skills in HTML, CSS, and React, with a strong interest in creating smooth layouts and
             engaging user experiences.</p>
           <br />
           <p>I enjoy learning new design trends, experimenting with animations, and improving my code
-            every day. My goal is to grow into a professional front-end developer who can build modern
+            every day. My goal is to grow into a professional full-stack developer who can build modern
             and impactful web projects that make a real difference.</p>
         </div>
       </div>

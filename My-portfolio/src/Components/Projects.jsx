@@ -5,11 +5,11 @@ import project1 from "../assets/project1.png"
 
 function Projects() {
 
-  const [cards] = useState[
-    {num: '01', image: {project1}, name: "E-commerce", 
+  const [cards] = useState([
+    {num: '01', image: project1, name: "E-commerce", 
     description:"Designed and developed an Auto Accessories Hub website. an e-commerce platform for new and used tyres, car accessories, and online wheel alignment booking.",
     link: "https://autoaccessorieshub.netlify.app/"}
-  ]
+  ])
 
   return (
     <div className="proj" id="project-section">
@@ -36,7 +36,9 @@ function Projects() {
           <div className="second2-div">
             <div className="h2-i">
               <h2>{card.name}</h2>
-              <i className="fa-solid fa-arrow-up-right-from-square"><a href="Link">{card.link}</a></i>
+              <a href={card.link}>
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
             </div>
             <div>
               <p>{card.description}</p>
@@ -45,54 +47,6 @@ function Projects() {
         </div>
 
         ))}
-
-        {/* <div className="second">
-          <div className="project-num">02</div>
-          <div className="second1-div">
-            <img src={Firstphoto} alt="Project" />
-          </div>
-          <div className="second2-div">
-            <div className="h2-i">
-              <h2>Project Name</h2>
-              <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <div>
-              <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="second">
-          <div className="project-num">03</div>
-          <div className="second1-div">
-            <img src={Firstphoto} alt="Project" />
-          </div>
-          <div className="second2-div">
-            <div className="h2-i">
-              <h2>Project Name</h2>
-              <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <div>
-              <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="second">
-          <div className="project-num">04</div>
-          <div className="second1-div">
-            <img src={Firstphoto} alt="Project" />
-          </div>
-          <div className="second2-div">
-            <div className="h2-i">
-              <h2>Project Name</h2>
-              <i className="fa-solid fa-arrow-up-right-from-square"></i>
-            </div>
-            <div>
-              <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
-            </div>
-          </div>
-        </div> */}
 
       </div> 
 
