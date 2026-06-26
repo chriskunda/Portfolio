@@ -1,7 +1,16 @@
+import { useState } from "react"
 import "./Projects.css"
 import Firstphoto from "../assets/Hiking.jpg"
+import project1 from "../assets/project1.png"
 
 function Projects() {
+
+  const [cards] = useState[
+    {num: '01', image: {project1}, name: "E-commerce", 
+    description:"Designed and developed an Auto Accessories Hub website. an e-commerce platform for new and used tyres, car accessories, and online wheel alignment booking.",
+    link: "https://autoaccessorieshub.netlify.app/"}
+  ]
+
   return (
     <div className="proj" id="project-section">
       <div className="projects-header">
@@ -14,24 +23,30 @@ function Projects() {
         </div>
       </div>
 
+      
       <div className="div-container">
+
+        {cards.map(card => (
+
         <div className="second">
-          <div className="project-num">01</div>
+          <div className="project-num">{card.num}</div>
           <div className="second1-div">
-            <img src={Firstphoto} alt="Project" />
+            <img src={card.image} alt="Project" />
           </div>
           <div className="second2-div">
             <div className="h2-i">
-              <h2>Project Name</h2>
-              <i className="fa-solid fa-arrow-up-right-from-square"></i>
+              <h2>{card.name}</h2>
+              <i className="fa-solid fa-arrow-up-right-from-square"><a href="Link">{card.link}</a></i>
             </div>
             <div>
-              <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
+              <p>{card.description}</p>
             </div>
           </div>
         </div>
 
-        <div className="second">
+        ))}
+
+        {/* <div className="second">
           <div className="project-num">02</div>
           <div className="second1-div">
             <img src={Firstphoto} alt="Project" />
@@ -77,8 +92,9 @@ function Projects() {
               <p>Projects built to showcase clean design, functionality, and practical web development experience.</p>
             </div>
           </div>
-        </div>
-      </div>
+        </div> */}
+
+      </div> 
 
       <div className="project-button-container">
         <button className="project-button" onClick={() => window.open("https://github.com/chriskunda")}>
